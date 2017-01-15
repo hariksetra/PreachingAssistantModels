@@ -1,13 +1,63 @@
+buildscript {
+    repositories {
+        maven {
+            url 'http://localhost:9081/artifactory/plugins-release'
+            credentials {
+                username = "admin"
+                password = "password"
+            }
+        }
+        
+    }
+    dependencies {
+        //Check for the latest version here: http://plugins.gradle.org/plugin/com.jfrog.artifactory
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4+"
+    }
+}
+
+allprojects {
+    apply plugin: "com.jfrog.artifactory"
+}
+
+artifactory {
+    contextUrl = "http://localhost:9081/artifactory"   //The base Artifactory URL if not overridden by the publisher/resolver
+    publish {
+        repository {
+            repoKey = 'libs-release-local'
+            username = "admin"
+            password = "password"
+            maven = true
+            
+        }
+        defaults {
+   			publications ('mavenJava')
+		}
+    }
+    resolve {
+        repository {
+            repoKey = 'libs-release'
+            username = "admin"
+            password = "password"
+            maven = true
+            
+        }
+    }
+        
+}
+
 group = 'com.giridhari'
 version = '1.0.0'
+def artifactId = projectDir.name
+def versionNumber = version
 
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
+apply plugin: 'maven-publish'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
    maven {
-       url 'http://52.77.165.53:9081/artifactory/libs-release-local'
+       url 'http://localhost:9081/artifactory/libs-release-local'
        credentials {
            username = "admin"
            password = "password"
@@ -26,4 +76,12 @@ dependencies {
     // testCompile dependency to testCompile 'org.testng:testng:6.8.1' and add
     // 'test.useTestNG()' to your build script.
     testCompile 'junit:junit:4.12'
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
 }
