@@ -5,6 +5,12 @@ import java.util.List;
 import com.giridhari.preachingassistant.rest.model.Paging;
 import com.giridhari.preachingassistant.rest.model.ResponseEntity;
 
+/**
+ * Holder for responses which have a list format with paging information
+ * 
+ * @author shyam
+ *
+ */
 public class BaseListReponse extends BaseResponse {
 	
 	private List<? extends ResponseEntity> data;

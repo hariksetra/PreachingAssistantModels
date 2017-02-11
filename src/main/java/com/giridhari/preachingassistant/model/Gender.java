@@ -1,5 +1,11 @@
 package com.giridhari.preachingassistant.model;
 
+/**
+ * The gender enum
+ * 
+ * @author shyam
+ *
+ */
 public enum Gender {
 	MALE("MALE"),
 	FEMALE("FEMALE");

@@ -1,18 +1,20 @@
-package com.giridhari.preachingassistant.rest.model;
+package com.giridhari.preachingassistant.rest.model.devotee;
 
 import java.util.Date;
 
 import com.giridhari.preachingassistant.model.Gender;
 import com.giridhari.preachingassistant.model.IncomeScale;
 import com.giridhari.preachingassistant.model.MaritalStatus;
+import com.giridhari.preachingassistant.rest.model.RequestEntity;
 
 /**
- * 
+ * Holds all necessary details of a devotee.
  * @author shyam
  *
  */
-public class DevoteeDetailRequestEntity extends RequestEntity {
+public class DevoteeDetailEntity extends RequestEntity {
 	
+	private Long id;
 	private String legalName;
 	private String initiatedName;
 	private Date dob;
@@ -36,6 +38,15 @@ public class DevoteeDetailRequestEntity extends RequestEntity {
 	private String booksRead;
 	private Integer monthlyContribution;
 	private String sikshaLevel;
+	private Long userAccountId;
+	
+	public Long getId() {
+		return id;
+	}
+	
+	public void setId(Long id) {
+		this.id = id;
+	}
 	
 	public String getLegalName() {
 		return legalName;
@@ -219,6 +230,14 @@ public class DevoteeDetailRequestEntity extends RequestEntity {
 	
 	public void setSikshaLevel(String sikshaLevel) {
 		this.sikshaLevel = sikshaLevel;
+	}
+	
+	public Long getUserAccountId() {
+		return userAccountId;
+	}
+	
+	public void setUserAccountId(Long userAccountId) {
+		this.userAccountId = userAccountId;
 	}
 	
 }

@@ -1,5 +1,10 @@
 package com.giridhari.preachingassistant.model;
 
+/**
+ * The income scale enum.
+ * @author shyam
+ *
+ */
 public enum IncomeScale {
 	
 	HIGH("HIGH"),

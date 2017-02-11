@@ -2,6 +2,12 @@ package com.giridhari.preachingassistant.rest.model.response;
 
 import com.giridhari.preachingassistant.rest.model.ResponseEntity;
 
+/**
+ * Base wrapper for all responses with "data" element
+ * 
+ * @author shyam
+ *
+ */
 public class BaseDataResponse {
 	
 	private ResponseEntity data;

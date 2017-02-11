@@ -1,5 +1,11 @@
 package com.giridhari.preachingassistant.rest.model;
 
+/**
+ * Holds paging information.
+ * 
+ * @author shyam
+ *
+ */
 public class Paging {
 	
 	private int page;

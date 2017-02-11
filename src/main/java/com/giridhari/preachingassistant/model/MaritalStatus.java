@@ -1,5 +1,10 @@
 package com.giridhari.preachingassistant.model;
 
+/**
+ * The marital status enum.
+ * @author shyam
+ *
+ */
 public enum MaritalStatus {
 	MARRIED("MARRIED"),
 	SINGLE("SINGLE"),
