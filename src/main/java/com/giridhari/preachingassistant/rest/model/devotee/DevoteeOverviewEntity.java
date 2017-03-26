@@ -2,13 +2,15 @@ package com.giridhari.preachingassistant.rest.model.devotee;
 
 import java.util.Date;
 
+import com.giridhari.preachingassistant.rest.model.ResponseEntity;
+
 /**
  * Used to hold overview of a devotee. Useful when showing a list of devotees.
  * 
  * @author shyam
  *
  */
-public class DevoteeOverviewEntity {
+public class DevoteeOverviewEntity extends ResponseEntity {
 	
 	private Long id;
 	private String name;
