@@ -5,14 +5,14 @@ import java.util.Date;
 import com.giridhari.preachingassistant.model.Gender;
 import com.giridhari.preachingassistant.model.IncomeScale;
 import com.giridhari.preachingassistant.model.MaritalStatus;
-import com.giridhari.preachingassistant.rest.model.RequestEntity;
+import com.giridhari.preachingassistant.rest.model.ResponseEntity;
 
 /**
  * Holds all necessary details of a devotee.
  * @author shyam
  *
  */
-public class DevoteeDetailEntity extends RequestEntity {
+public class DevoteeDetailResponseEntity extends ResponseEntity {
 	
 	private Long id;
 	private String legalName;
