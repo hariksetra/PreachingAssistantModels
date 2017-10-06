@@ -33,6 +33,8 @@ public class DevoteeDetailRequestEntity extends RequestEntity {
 	private Long capturedBy;
 	private String area;
 	private String address;
+	private String postalCode;
+	private String country;
 	private String email;
 	private String capturedFor;
 	private String booksRead;
@@ -192,6 +194,22 @@ public class DevoteeDetailRequestEntity extends RequestEntity {
 		this.address = address;
 	}
 	
+	public String getPostalCode() {
+		return postalCode;
+	}
+
+	public void setPostalCode(String postalCode) {
+		this.postalCode = postalCode;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
 	public String getEmail() {
 		return email;
 	}

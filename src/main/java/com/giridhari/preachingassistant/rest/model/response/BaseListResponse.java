@@ -11,7 +11,7 @@ import com.giridhari.preachingassistant.rest.model.ResponseEntity;
  * @author shyam
  *
  */
-public class BaseListReponse extends BaseResponse {
+public class BaseListResponse extends BaseResponse {
 	
 	private List<? extends ResponseEntity> data;
 	private Paging paging;
