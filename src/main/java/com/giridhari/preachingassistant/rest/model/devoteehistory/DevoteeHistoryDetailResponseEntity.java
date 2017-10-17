@@ -7,7 +7,9 @@ import com.giridhari.preachingassistant.rest.model.ResponseEntity;
 public class DevoteeHistoryDetailResponseEntity extends ResponseEntity{
 	private Long id;
 	private Long commentedByDevoteeId;
+	private String commentedByDevoteeName;
 	private Long ratedDevoteeId;
+	private String ratedDevoteeName;
 	private Integer rating;
 	private String response;
 	private String comment;
@@ -29,6 +31,14 @@ public class DevoteeHistoryDetailResponseEntity extends ResponseEntity{
 		this.commentedByDevoteeId = commentedByDevoteeId;
 	}
 	
+	public String getCommentedByDevoteeName() {
+		return commentedByDevoteeName;
+	}
+
+	public void setCommentedByDevoteeName(String commentedByDevoteeName) {
+		this.commentedByDevoteeName = commentedByDevoteeName;
+	}
+
 	public Long getRatedDevoteeId() {
 		return ratedDevoteeId;
 	}
@@ -37,6 +47,14 @@ public class DevoteeHistoryDetailResponseEntity extends ResponseEntity{
 		this.ratedDevoteeId = ratedDevoteeId;
 	}
 	
+	public String getRatedDevoteeName() {
+		return ratedDevoteeName;
+	}
+
+	public void setRatedDevoteeName(String ratedDevoteeName) {
+		this.ratedDevoteeName = ratedDevoteeName;
+	}
+
 	public Integer getRating() {
 		return rating;
 	}
