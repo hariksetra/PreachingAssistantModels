@@ -17,6 +17,7 @@ public class DevoteeDetailResponseEntity extends ResponseEntity {
 	private Long id;
 	private String legalName;
 	private String initiatedName;
+	private String displayName;
 	private Date dob;
 	private Gender gender;
 	private MaritalStatus maritalStatus;
@@ -66,6 +67,14 @@ public class DevoteeDetailResponseEntity extends ResponseEntity {
 		this.initiatedName = initiatedName;
 	}
 	
+	public String getDisplayName() {
+		return displayName;
+	}
+
+	public void setDisplayName(String displayName) {
+		this.displayName = displayName;
+	}
+
 	public Date getDob() {
 		return dob;
 	}
