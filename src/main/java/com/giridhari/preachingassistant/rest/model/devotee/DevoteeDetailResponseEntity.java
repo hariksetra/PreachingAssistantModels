@@ -2,9 +2,11 @@ package com.giridhari.preachingassistant.rest.model.devotee;
 
 import java.util.Date;
 
+import com.giridhari.preachingassistant.model.CountryCode;
 import com.giridhari.preachingassistant.model.Gender;
 import com.giridhari.preachingassistant.model.IncomeScale;
 import com.giridhari.preachingassistant.model.MaritalStatus;
+import com.giridhari.preachingassistant.model.SikshaLevel;
 import com.giridhari.preachingassistant.rest.model.ResponseEntity;
 
 /**
@@ -34,13 +36,13 @@ public class DevoteeDetailResponseEntity extends ResponseEntity {
 	private Long capturedBy;
 	private String area;
 	private String address;
-	private String postalCode;
-	private String country;
+	private String zipPostalCode;
+	private CountryCode countryCode;
 	private String email;
 	private String capturedFor;
 	private String booksRead;
 	private Integer monthlyContribution;
-	private String sikshaLevel;
+	private SikshaLevel sikshaLevel;
 	private Long userAccountId;
 	
 	public Long getId() {
@@ -199,20 +201,20 @@ public class DevoteeDetailResponseEntity extends ResponseEntity {
 		return address;
 	}
 	
-	public String getPostalCode() {
-		return postalCode;
+	public String getZipPostalCode() {
+		return zipPostalCode;
 	}
 
-	public void setPostalCode(String postalCode) {
-		this.postalCode = postalCode;
+	public void setZipPostalCode(String zipPostalCode) {
+		this.zipPostalCode = zipPostalCode;
 	}
 
-	public String getCountry() {
-		return country;
+	public CountryCode getCountryCode() {
+		return countryCode;
 	}
 
-	public void setCountry(String country) {
-		this.country = country;
+	public void setCountryCode(CountryCode countryCode) {
+		this.countryCode = countryCode;
 	}
 
 	public void setAddress(String address) {
@@ -251,11 +253,11 @@ public class DevoteeDetailResponseEntity extends ResponseEntity {
 		this.monthlyContribution = monthlyContribution;
 	}
 	
-	public String getSikshaLevel() {
+	public SikshaLevel getSikshaLevel() {
 		return sikshaLevel;
 	}
 	
-	public void setSikshaLevel(String sikshaLevel) {
+	public void setSikshaLevel(SikshaLevel sikshaLevel) {
 		this.sikshaLevel = sikshaLevel;
 	}
 	
