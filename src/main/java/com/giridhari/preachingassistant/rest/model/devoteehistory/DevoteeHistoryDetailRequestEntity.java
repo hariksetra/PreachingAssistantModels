@@ -2,6 +2,7 @@ package com.giridhari.preachingassistant.rest.model.devoteehistory;
 
 import java.util.Date;
 
+import com.giridhari.preachingassistant.model.Response;
 import com.giridhari.preachingassistant.rest.model.RequestEntity;
 
 public class DevoteeHistoryDetailRequestEntity extends RequestEntity{
@@ -9,7 +10,7 @@ public class DevoteeHistoryDetailRequestEntity extends RequestEntity{
 	private Long commentedByDevoteeId;
 	private Long ratedDevoteeId;
 	private Integer rating;
-	private String response;
+	private Response response;
 	private String comment;
 	private Date timeStamp;
 	public Long getId() {
@@ -38,10 +39,10 @@ public class DevoteeHistoryDetailRequestEntity extends RequestEntity{
 	public void setRating(Integer rating) {
 		this.rating = rating;
 	}
-	public String getResponse() {
+	public Response getResponse() {
 		return response;
 	}
-	public void setResponse(String response) {
+	public void setResponse(Response response) {
 		this.response = response;
 	}
 	public String getComment() {

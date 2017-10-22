@@ -1,6 +1,6 @@
 package com.giridhari.preachingassistant.model;
 
-public enum TargetAudiance {
+public enum TargetAudience {
 	YOUTH_BOYS("Youth Boys"),
 	YOUTH_GIRLS("Youth Girls"),
 	YOUTH("Youth"),
@@ -10,7 +10,7 @@ public enum TargetAudiance {
 	
 	private String targetAudiance;
 	
-	private TargetAudiance(String targetAudiance) {
+	private TargetAudience(String targetAudiance) {
 		this.targetAudiance = targetAudiance;
 	}
 	

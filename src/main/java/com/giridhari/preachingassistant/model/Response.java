@@ -11,18 +11,15 @@ public enum Response {
 	WILL_COME_LATER("WILL COME LATER"),
 	REMOVE_ME("REMOVE ME");
 	
-	private String response;
+	private final String response;
 	
 	private Response(String response) {
 		this.response = response;
 	}
 	
-	public void setResponse(String response) {
-		this.response = response;
-	}
-
-	public String getResponse() {
-		return this.response;
+	@Override
+	public String toString() {
+		return response;
 	}
 	
 }

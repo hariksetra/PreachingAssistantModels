@@ -2,6 +2,7 @@ package com.giridhari.preachingassistant.rest.model.devoteehistory;
 
 import java.util.Date;
 
+import com.giridhari.preachingassistant.model.Response;
 import com.giridhari.preachingassistant.rest.model.ResponseEntity;
 
 public class DevoteeHistoryDetailResponseEntity extends ResponseEntity{
@@ -11,7 +12,7 @@ public class DevoteeHistoryDetailResponseEntity extends ResponseEntity{
 	private Long ratedDevoteeId;
 	private String ratedDevoteeName;
 	private Integer rating;
-	private String response;
+	private Response response;
 	private String comment;
 	private Date timeStamp;
 	
@@ -63,14 +64,14 @@ public class DevoteeHistoryDetailResponseEntity extends ResponseEntity{
 		this.rating = rating;
 	}
 	
-	public String getResponse() {
+	public Response getResponse() {
 		return response;
 	}
 	
-	public void setResponse(String response) {
+	public void setResponse(Response response) {
 		this.response = response;
 	}
-	
+
 	public String getComment() {
 		return comment;
 	}
