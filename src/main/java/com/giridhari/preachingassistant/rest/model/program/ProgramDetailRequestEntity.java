@@ -14,7 +14,7 @@ public class ProgramDetailRequestEntity extends RequestEntity{
 	private String address;
 	private String mapLocation;
 	private ProgramType type;
-	private TargetAudience targetAudiance;
+	private TargetAudience targetAudience;
 	private String followupDescription;
 	public Long getId() {
 		return id;
@@ -64,11 +64,11 @@ public class ProgramDetailRequestEntity extends RequestEntity{
 	public void setType(ProgramType type) {
 		this.type = type;
 	}
-	public TargetAudience getTargetAudiance() {
-		return targetAudiance;
+	public TargetAudience getTargetAudience() {
+		return targetAudience;
 	}
-	public void setTargetAudiance(TargetAudience targetAudiance) {
-		this.targetAudiance = targetAudiance;
+	public void setTargetAudience(TargetAudience targetAudience) {
+		this.targetAudience = targetAudience;
 	}
 	public String getFollowupDescription() {
 		return followupDescription;
