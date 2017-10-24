@@ -9,6 +9,13 @@ public class ProgramDetailResponseEntity extends ResponseEntity{
 	private String name;
 	private Long mentorId;
 	private Long parentYatraId;
+	private String description;
+	private String address;
+	private String mapLocation;
+	private ProgramType type;
+	private TargetAudience targetAudience;
+	private String followupDescription[];
+	
 	public Long getId() {
 		return id;
 	}
@@ -57,22 +64,16 @@ public class ProgramDetailResponseEntity extends ResponseEntity{
 	public void setType(ProgramType type) {
 		this.type = type;
 	}
-	public TargetAudience getTargetAudiance() {
-		return targetAudiance;
+	public TargetAudience getTargetAudience() {
+		return targetAudience;
 	}
-	public void setTargetAudiance(TargetAudience targetAudiance) {
-		this.targetAudiance = targetAudiance;
+	public void setTargetAudience(TargetAudience targetAudience) {
+		this.targetAudience = targetAudience;
 	}
-	public String getFollowupDescription() {
+	public String[] getFollowupDescription() {
 		return followupDescription;
 	}
-	public void setFollowupDescription(String followupDescription) {
+	public void setFollowupDescription(String followupDescription[]) {
 		this.followupDescription = followupDescription;
 	}
-	private String description;
-	private String address;
-	private String mapLocation;
-	private ProgramType type;
-	private TargetAudience targetAudiance;
-	private String followupDescription;
 }

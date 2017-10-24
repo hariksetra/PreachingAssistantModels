@@ -15,7 +15,8 @@ public class ProgramDetailRequestEntity extends RequestEntity{
 	private String mapLocation;
 	private ProgramType type;
 	private TargetAudience targetAudience;
-	private String followupDescription;
+	private String followupDescription[];
+	
 	public Long getId() {
 		return id;
 	}
@@ -70,10 +71,10 @@ public class ProgramDetailRequestEntity extends RequestEntity{
 	public void setTargetAudience(TargetAudience targetAudience) {
 		this.targetAudience = targetAudience;
 	}
-	public String getFollowupDescription() {
+	public String[] getFollowupDescription() {
 		return followupDescription;
 	}
-	public void setFollowupDescription(String followupDescription) {
+	public void setFollowupDescription(String followupDescription[]) {
 		this.followupDescription = followupDescription;
 	}
 	

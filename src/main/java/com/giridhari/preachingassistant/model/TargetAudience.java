@@ -8,14 +8,14 @@ public enum TargetAudience {
 	CONGREGATION("Congregation"),
 	ALL("Generic Public Program");
 	
-	private String targetAudiance;
+	private String targetAudience;
 	
-	private TargetAudience(String targetAudiance) {
-		this.targetAudiance = targetAudiance;
+	private TargetAudience(String targetAudience) {
+		this.targetAudience = targetAudience;
 	}
 	
 	@Override
 	public String toString() {
-		return this.targetAudiance;
+		return this.targetAudience;
 	}
 }
