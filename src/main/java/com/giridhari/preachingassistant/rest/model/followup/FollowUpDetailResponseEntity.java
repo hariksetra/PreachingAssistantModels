@@ -14,7 +14,7 @@ public class FollowUpDetailResponseEntity extends ResponseEntity{
 	private String comment;
 	private Integer rating;
 	private Date timestamp;
-	private String taskStatus;
+	private Integer taskStatus;
 	public Long getId() {
 		return id;
 	}
@@ -57,10 +57,10 @@ public class FollowUpDetailResponseEntity extends ResponseEntity{
 	public void setTimestamp(Date timestamp) {
 		this.timestamp = timestamp;
 	}
-	public String getTaskStatus() {
+	public Integer getTaskStatus() {
 		return taskStatus;
 	}
-	public void setTaskStatus(String taskStatus) {
+	public void setTaskStatus(Integer taskStatus) {
 		this.taskStatus = taskStatus;
 	}
 	
