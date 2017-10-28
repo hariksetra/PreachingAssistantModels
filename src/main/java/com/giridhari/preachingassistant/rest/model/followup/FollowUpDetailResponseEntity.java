@@ -10,6 +10,7 @@ public class FollowUpDetailResponseEntity extends ResponseEntity{
 	private Long id;
 	private Long volunteerId;
 	private Long attendeeId;
+	private Long programId;
 	private Response response;
 	private String comment;
 	private Integer rating;
@@ -32,6 +33,12 @@ public class FollowUpDetailResponseEntity extends ResponseEntity{
 	}
 	public void setAttendeeId(Long attendeeId) {
 		this.attendeeId = attendeeId;
+	}
+	public Long getProgramId() {
+		return programId;
+	}
+	public void setProgramId(Long programId) {
+		this.programId = programId;
 	}
 	public Response getResponse() {
 		return response;
