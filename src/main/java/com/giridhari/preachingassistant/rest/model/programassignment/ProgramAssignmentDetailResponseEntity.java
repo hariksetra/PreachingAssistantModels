@@ -6,7 +6,9 @@ public class ProgramAssignmentDetailResponseEntity extends ResponseEntity{
 
 	private Long id;
 	private Long programId;
+	private String programName;
 	private Long attendeeId;
+	private String attendeeName;
 	public Long getId() {
 		return id;
 	}
@@ -24,6 +26,18 @@ public class ProgramAssignmentDetailResponseEntity extends ResponseEntity{
 	}
 	public void setAttendeeId(Long attendeeId) {
 		this.attendeeId = attendeeId;
+	}
+	public String getProgramName() {
+		return programName;
+	}
+	public void setProgramName(String programName) {
+		this.programName = programName;
+	}
+	public String getAttendeeName() {
+		return attendeeName;
+	}
+	public void setAttendeeName(String attendeeName) {
+		this.attendeeName = attendeeName;
 	}
 	
 	
