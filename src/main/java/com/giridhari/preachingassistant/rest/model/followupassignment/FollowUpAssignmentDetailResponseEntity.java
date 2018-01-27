@@ -6,8 +6,11 @@ public class FollowUpAssignmentDetailResponseEntity extends ResponseEntity {
 
 	private Long id;
 	private Long attendeeId;
+	private String attendeeName;
 	private Long volunteerId;
 	private Long programId;
+	private String programName;
+	
 	public Long getId() {
 		return id;
 	}
@@ -31,6 +34,18 @@ public class FollowUpAssignmentDetailResponseEntity extends ResponseEntity {
 	}
 	public void setProgramId(Long programId) {
 		this.programId = programId;
+	}
+	public String getProgramName() {
+		return programName;
+	}
+	public void setProgramName(String programName) {
+		this.programName = programName;
+	}
+	public String getAttendeeName() {
+		return attendeeName;
+	}
+	public void setAttendeeName(String attendeeName) {
+		this.attendeeName = attendeeName;
 	}
 	
 	
