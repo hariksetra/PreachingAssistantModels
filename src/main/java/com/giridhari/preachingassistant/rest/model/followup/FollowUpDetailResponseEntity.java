@@ -16,6 +16,10 @@ public class FollowUpDetailResponseEntity extends ResponseEntity{
 	private Integer rating;
 	private Date timestamp;
 	private Integer taskStatus;
+	private String volunteerName;
+	private String attendeeName;
+	private String programName;
+	
 	public Long getId() {
 		return id;
 	}
@@ -69,6 +73,24 @@ public class FollowUpDetailResponseEntity extends ResponseEntity{
 	}
 	public void setTaskStatus(Integer taskStatus) {
 		this.taskStatus = taskStatus;
+	}
+	public String getVolunteerName() {
+		return volunteerName;
+	}
+	public void setVolunteerName(String volunteerName) {
+		this.volunteerName = volunteerName;
+	}
+	public String getAttendeeName() {
+		return attendeeName;
+	}
+	public void setAttendeeName(String attendeeName) {
+		this.attendeeName = attendeeName;
+	}
+	public String getProgramName() {
+		return programName;
+	}
+	public void setProgramName(String programName) {
+		this.programName = programName;
 	}
 	
 	
