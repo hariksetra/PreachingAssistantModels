@@ -33,7 +33,6 @@ public class DevoteeDetailResponseEntity extends ResponseEntity {
 	private Date introDate;
 	private String preferredLanguage;
 	private String description;
-	private Long capturedBy;
 	private String area;
 	private String address;
 	private String zipPostalCode;
@@ -43,6 +42,8 @@ public class DevoteeDetailResponseEntity extends ResponseEntity {
 	private String booksRead;
 	private Integer monthlyContribution;
 	private SikshaLevel sikshaLevel;
+	private Long yatraId;
+	private String yatraName;
 	private Long userAccountId;
 	
 	public Long getId() {
@@ -181,14 +182,6 @@ public class DevoteeDetailResponseEntity extends ResponseEntity {
 		this.description = description;
 	}
 	
-	public Long getCapturedBy() {
-		return capturedBy;
-	}
-	
-	public void setCapturedBy(Long capturedBy) {
-		this.capturedBy = capturedBy;
-	}
-	
 	public String getArea() {
 		return area;
 	}
@@ -267,6 +260,22 @@ public class DevoteeDetailResponseEntity extends ResponseEntity {
 	
 	public void setUserAccountId(Long userAccountId) {
 		this.userAccountId = userAccountId;
+	}
+
+	public Long getYatraId() {
+		return yatraId;
+	}
+
+	public void setYatraId(Long yatraId) {
+		this.yatraId = yatraId;
+	}
+
+	public String getYatraName() {
+		return yatraName;
+	}
+
+	public void setYatraName(String yatraName) {
+		this.yatraName = yatraName;
 	}
 	
 }

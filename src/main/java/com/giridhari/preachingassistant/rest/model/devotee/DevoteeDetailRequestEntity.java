@@ -32,7 +32,6 @@ public class DevoteeDetailRequestEntity extends RequestEntity {
 	private Date introDate;
 	private String preferredLanguage;
 	private String description;
-	private Long capturedBy;
 	private String area;
 	private String address;
 	private String zipPostalCode;
@@ -42,7 +41,12 @@ public class DevoteeDetailRequestEntity extends RequestEntity {
 	private String booksRead;
 	private Integer monthlyContribution;
 	private SikshaLevel sikshaLevel;
+	private Long yatraId;
 	private Long userAccountId;
+	//Devotee does not have captured by field
+	//When the devotee is created an entry in capture contact table is 
+	//automatically made
+	private Long capturedBy;
 	
 	public Long getId() {
 		return id;
@@ -172,14 +176,6 @@ public class DevoteeDetailRequestEntity extends RequestEntity {
 		this.description = description;
 	}
 	
-	public Long getCapturedBy() {
-		return capturedBy;
-	}
-	
-	public void setCapturedBy(Long capturedBy) {
-		this.capturedBy = capturedBy;
-	}
-	
 	public String getArea() {
 		return area;
 	}
@@ -258,6 +254,22 @@ public class DevoteeDetailRequestEntity extends RequestEntity {
 	
 	public void setUserAccountId(Long userAccountId) {
 		this.userAccountId = userAccountId;
+	}
+
+	public Long getYatraId() {
+		return yatraId;
+	}
+
+	public void setYatraId(Long yatraId) {
+		this.yatraId = yatraId;
+	}
+
+	public Long getCapturedBy() {
+		return capturedBy;
+	}
+
+	public void setCapturedBy(Long capturedBy) {
+		this.capturedBy = capturedBy;
 	}
 	
 }
