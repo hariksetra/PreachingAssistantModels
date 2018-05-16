@@ -15,6 +15,7 @@ public class DevoteeOverviewEntity extends ResponseEntity {
 	private Long id;
 	private String name;
 	private String phone;
+	private String email;
 	private String preferredLanguage;
 	private Date introDate;
 	
@@ -56,6 +57,14 @@ public class DevoteeOverviewEntity extends ResponseEntity {
 	
 	public void setIntroDate(Date introDate) {
 		this.introDate = introDate;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 }
