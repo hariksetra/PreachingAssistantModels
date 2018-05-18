@@ -9,6 +9,9 @@ public class ProgramAssignmentDetailResponseEntity extends ResponseEntity{
 	private String programName;
 	private Long attendeeId;
 	private String attendeeName;
+	private String attendeePhone;
+	private String attendeeEmail;
+	
 	public Long getId() {
 		return id;
 	}
@@ -39,6 +42,16 @@ public class ProgramAssignmentDetailResponseEntity extends ResponseEntity{
 	public void setAttendeeName(String attendeeName) {
 		this.attendeeName = attendeeName;
 	}
-	
-	
+	public String getAttendeePhone() {
+		return attendeePhone;
+	}
+	public void setAttendeePhone(String attendeePhone) {
+		this.attendeePhone = attendeePhone;
+	}
+	public String getAttendeeEmail() {
+		return attendeeEmail;
+	}
+	public void setAttendeeEmail(String attendeeEmail) {
+		this.attendeeEmail = attendeeEmail;
+	}
 }
