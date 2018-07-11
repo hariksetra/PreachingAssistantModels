@@ -9,6 +9,7 @@ public class FollowUpVolunteerDetailResponseEntity extends ResponseEntity{
 	private String programName;
 	private Long devoteeId;
 	private String devoteeName;
+	private boolean isFollwupVolunteer;
 	public Long getId() {
 		return id;
 	}
@@ -38,6 +39,12 @@ public class FollowUpVolunteerDetailResponseEntity extends ResponseEntity{
 	}
 	public void setDevoteeName(String devoteeName) {
 		this.devoteeName = devoteeName;
+	}
+	public boolean isFollwupVolunteer() {
+		return isFollwupVolunteer;
+	}
+	public void setFollwupVolunteer(boolean isFollwupVolunteer) {
+		this.isFollwupVolunteer = isFollwupVolunteer;
 	}
 	
 	
