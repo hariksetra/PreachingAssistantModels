@@ -8,6 +8,7 @@ import com.giridhari.preachingassistant.rest.model.RequestEntity;
 public class FollowUpDetailRequestEntity extends RequestEntity{
 
 	private Long id;
+	private Long followupForSessionId;
 	private Long volunteerId;
 	private Long attendeeId;
 	private Long programId;
@@ -69,6 +70,12 @@ public class FollowUpDetailRequestEntity extends RequestEntity{
 	}
 	public void setTaskStatus(Integer taskStatus) {
 		this.taskStatus = taskStatus;
+	}
+	public Long getFollowupForSessionId() {
+		return followupForSessionId;
+	}
+	public void setFollowupForSessionId(Long followupForSessionId) {
+		this.followupForSessionId = followupForSessionId;
 	}
 	
 	

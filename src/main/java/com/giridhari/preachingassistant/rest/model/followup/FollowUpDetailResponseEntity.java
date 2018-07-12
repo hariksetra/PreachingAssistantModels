@@ -8,6 +8,9 @@ import com.giridhari.preachingassistant.rest.model.ResponseEntity;
 public class FollowUpDetailResponseEntity extends ResponseEntity{
 
 	private Long id;
+	private Long followupForSessionId;
+	private Date followupForSessionDate;
+	private String followupForSessionTopic;
 	private Long volunteerId;
 	private Long attendeeId;
 	private Long programId;
@@ -92,6 +95,23 @@ public class FollowUpDetailResponseEntity extends ResponseEntity{
 	public void setProgramName(String programName) {
 		this.programName = programName;
 	}
-	
+	public Long getFollowupForSessionId() {
+		return followupForSessionId;
+	}
+	public void setFollowupForSessionId(Long followupForSessionId) {
+		this.followupForSessionId = followupForSessionId;
+	}
+	public Date getFollowupForSessionDate() {
+		return followupForSessionDate;
+	}
+	public void setFollowupForSessionDate(Date followupForSessionDate) {
+		this.followupForSessionDate = followupForSessionDate;
+	}
+	public String getFollowupForSessionTopic() {
+		return followupForSessionTopic;
+	}
+	public void setFollowupForSessionTopic(String followupForSessionTopic) {
+		this.followupForSessionTopic = followupForSessionTopic;
+	}
 	
 }

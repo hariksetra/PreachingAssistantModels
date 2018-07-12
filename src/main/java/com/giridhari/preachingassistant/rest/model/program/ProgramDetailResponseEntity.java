@@ -1,5 +1,7 @@
 package com.giridhari.preachingassistant.rest.model.program;
 
+import java.util.Date;
+
 import com.giridhari.preachingassistant.model.ProgramType;
 import com.giridhari.preachingassistant.model.TargetAudience;
 import com.giridhari.preachingassistant.rest.model.ResponseEntity;
@@ -15,6 +17,9 @@ public class ProgramDetailResponseEntity extends ResponseEntity{
 	private ProgramType type;
 	private TargetAudience targetAudience;
 	private String followupDescription[];
+	private Long currentFollowupSession;
+	private Date currentFollowupSessionDate;
+	private String currentFollowupSessionTopic;
 	
 	public Long getId() {
 		return id;
@@ -76,4 +81,23 @@ public class ProgramDetailResponseEntity extends ResponseEntity{
 	public void setFollowupDescription(String followupDescription[]) {
 		this.followupDescription = followupDescription;
 	}
+	public Long getCurrentFollowupSession() {
+		return currentFollowupSession;
+	}
+	public void setCurrentFollowupSession(Long currentFollowupSession) {
+		this.currentFollowupSession = currentFollowupSession;
+	}
+	public Date getCurrentFollowupSessionDate() {
+		return currentFollowupSessionDate;
+	}
+	public void setCurrentFollowupSessionDate(Date currentFollowupSessionDate) {
+		this.currentFollowupSessionDate = currentFollowupSessionDate;
+	}
+	public String getCurrentFollowupSessionTopic() {
+		return currentFollowupSessionTopic;
+	}
+	public void setCurrentFollowupSessionTopic(String currentFollowupSessionTopic) {
+		this.currentFollowupSessionTopic = currentFollowupSessionTopic;
+	}
+	
 }

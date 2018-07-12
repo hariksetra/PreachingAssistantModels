@@ -16,6 +16,7 @@ public class ProgramDetailRequestEntity extends RequestEntity{
 	private ProgramType type;
 	private TargetAudience targetAudience;
 	private String followupDescription[];
+	private Long currentFollowupSession;
 	
 	public Long getId() {
 		return id;
@@ -76,6 +77,12 @@ public class ProgramDetailRequestEntity extends RequestEntity{
 	}
 	public void setFollowupDescription(String followupDescription[]) {
 		this.followupDescription = followupDescription;
+	}
+	public Long getCurrentFollowupSession() {
+		return currentFollowupSession;
+	}
+	public void setCurrentFollowupSession(Long currentFollowupSession) {
+		this.currentFollowupSession = currentFollowupSession;
 	}
 	
 }
