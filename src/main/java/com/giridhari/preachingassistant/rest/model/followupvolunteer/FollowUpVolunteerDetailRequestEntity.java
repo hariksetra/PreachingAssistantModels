@@ -7,7 +7,7 @@ public class FollowUpVolunteerDetailRequestEntity extends RequestEntity{
 	private Long id;
 	private Long programId;
 	private Long devoteeId;
-	private boolean isFollwupVolunteer;
+	private boolean isFollowupVolunteer;
 	public Long getId() {
 		return id;
 	}
@@ -26,11 +26,11 @@ public class FollowUpVolunteerDetailRequestEntity extends RequestEntity{
 	public void setDevoteeId(Long devoteeId) {
 		this.devoteeId = devoteeId;
 	}
-	public boolean isFollwupVolunteer() {
-		return isFollwupVolunteer;
+	public boolean isFollowupVolunteer() {
+		return isFollowupVolunteer;
 	}
-	public void setFollwupVolunteer(boolean isFollwupVolunteer) {
-		this.isFollwupVolunteer = isFollwupVolunteer;
+	public void setFollowupVolunteer(boolean isFollowupVolunteer) {
+		this.isFollowupVolunteer = isFollowupVolunteer;
 	}
 	
 	
