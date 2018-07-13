@@ -7,6 +7,7 @@ public class FollowUpVolunteerDetailResponseEntity extends ResponseEntity{
 	private Long id;
 	private Long programId;
 	private String programName;
+	private String programArea;
 	private Long devoteeId;
 	private String devoteeName;
 	private boolean isFollowupVolunteer;
@@ -45,6 +46,12 @@ public class FollowUpVolunteerDetailResponseEntity extends ResponseEntity{
 	}
 	public void setFollowupVolunteer(boolean isFollowupVolunteer) {
 		this.isFollowupVolunteer = isFollowupVolunteer;
+	}
+	public String getProgramArea() {
+		return programArea;
+	}
+	public void setProgramArea(String programArea) {
+		this.programArea = programArea;
 	}
 	
 	
