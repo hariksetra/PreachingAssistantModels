@@ -1,6 +1,5 @@
 package com.giridhari.preachingassistant.rest.model.followupassignment;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class FollowUpVolunteerReport {
