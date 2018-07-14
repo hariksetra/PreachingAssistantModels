@@ -7,28 +7,37 @@ public class UserLoginResponseEntity extends ResponseEntity{
 	private long devoteeId;
 	private String devoteeName;
 	private String role;
-	
+	private String username;
+
 	public long getDevoteeId() {
 		return devoteeId;
 	}
-	
+
 	public void setDevoteeId(long devoteeId) {
 		this.devoteeId = devoteeId;
 	}
-	
+
 	public String getDevoteeName() {
 		return devoteeName;
 	}
-	
+
 	public void setDevoteeName(String devoteeName) {
 		this.devoteeName = devoteeName;
 	}
-	
+
 	public String getRole() {
 		return role;
 	}
-	
+
 	public void setRole(String role) {
 		this.role = role;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
 }
