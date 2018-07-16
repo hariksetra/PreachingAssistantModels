@@ -1,5 +1,7 @@
 package com.giridhari.preachingassistant.rest.model.programassignment;
 
+import java.util.Date;
+
 import com.giridhari.preachingassistant.rest.model.ResponseEntity;
 
 public class ProgramAssignmentDetailResponseEntity extends ResponseEntity{
@@ -11,6 +13,7 @@ public class ProgramAssignmentDetailResponseEntity extends ResponseEntity{
 	private String attendeeName;
 	private String attendeePhone;
 	private String attendeeEmail;
+	private Date dateAdded;
 	
 	public Long getId() {
 		return id;
@@ -54,4 +57,11 @@ public class ProgramAssignmentDetailResponseEntity extends ResponseEntity{
 	public void setAttendeeEmail(String attendeeEmail) {
 		this.attendeeEmail = attendeeEmail;
 	}
+	public Date getDateAdded() {
+		return dateAdded;
+	}
+	public void setDateAdded(Date dateAdded) {
+		this.dateAdded = dateAdded;
+	}
+	
 }
