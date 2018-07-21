@@ -11,7 +11,9 @@ public class CaptureContactDetailResponseEntity extends ResponseEntity {
 	private Long capturedDevoteeId;
 	private String capturedDevoteeName;
 	private String capturedDevoteePhone;
+	private String introducedAt;
 	private Date timestamp;
+	
 	public Long getId() {
 		return id;
 	}
@@ -54,4 +56,11 @@ public class CaptureContactDetailResponseEntity extends ResponseEntity {
 	public void setTimestamp(Date timestamp) {
 		this.timestamp = timestamp;
 	}
+	public String getIntroducedAt() {
+		return introducedAt;
+	}
+	public void setIntroducedAt(String introducedAt) {
+		this.introducedAt = introducedAt;
+	}
+	
 }
