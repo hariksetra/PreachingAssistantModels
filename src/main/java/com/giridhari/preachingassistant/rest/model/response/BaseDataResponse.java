@@ -1,7 +1,5 @@
 package com.giridhari.preachingassistant.rest.model.response;
 
-import com.giridhari.preachingassistant.rest.model.ResponseEntity;
-
 /**
  * Base wrapper for all responses with "data" element
  * 
@@ -10,18 +8,14 @@ import com.giridhari.preachingassistant.rest.model.ResponseEntity;
  */
 public class BaseDataResponse {
 	
-	private ResponseEntity data;
+	private String errorMessage;
+
+	public String getErrorMessage() {
+		return errorMessage;
+	}
 	
-	public BaseDataResponse(ResponseEntity entity) {
-		this.data = entity;
-	}
-
-	public ResponseEntity getData() {
-		return data;
-	}
-
-	public void setData(ResponseEntity data) {
-		this.data = data;
+	public void setErrorMessage(String errorMessage) {
+		this.errorMessage = errorMessage;
 	}
 
 }

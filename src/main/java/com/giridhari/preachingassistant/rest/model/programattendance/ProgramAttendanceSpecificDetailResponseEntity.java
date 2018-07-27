@@ -1,6 +1,5 @@
 package com.giridhari.preachingassistant.rest.model.programattendance;
 
-import java.util.Date;
 import java.util.List;
 
 import com.giridhari.preachingassistant.rest.model.ResponseEntity;

@@ -1,7 +1,5 @@
 package com.giridhari.preachingassistant.rest.model.programattendance;
 
-import java.util.Date;
-
 import com.giridhari.preachingassistant.rest.model.RequestEntity;
 
 public class ProgramAttendanceDetailRequestEntity extends RequestEntity{
